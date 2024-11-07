@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var pressed = false;
+    function changeButton(){
+        let element = document.getElementById("teksti");
+        pressed = document.getElementById("checkbox").checked;
+        element.innerHTML = pressed ? "ON" : "OFF";
+    }
+</script>
+<form>
+    <input type="checkbox" value="false" id="checkbox">
+    <input type="button" onclick="changeButton()" value="PAINA TÄSTÄ!">
+</form>
+<p id="teksti"></p>
+</body>
+</html>
